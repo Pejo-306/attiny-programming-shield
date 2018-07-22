@@ -38,7 +38,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "ATTiny arduino programming shield"
+Title "ATTiny Arduino programming shield"
 Date "2018-07-22"
 Rev "1"
 Comp "Petar Nikolov"
