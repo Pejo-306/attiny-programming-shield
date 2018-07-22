@@ -29,3 +29,6 @@ _autosave-*
 # Arduino shield library
 schematics/Arduino
 
+# Gerber files
+schematics/gerber
+
