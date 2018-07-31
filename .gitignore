@@ -26,9 +26,9 @@ _autosave-*
 *.xml
 *.csv
 
-# Arduino shield library
-schematics/Arduino
-
 # Gerber files
 schematics/gerber
+
+# KiCad 4 backup version
+schematics/rescue-backup
 

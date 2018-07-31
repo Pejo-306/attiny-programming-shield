@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name ATTinyProgrammingShield-rescue)(type Legacy)(uri ${KIPRJMOD}/ATTinyProgrammingShield-rescue.lib)(options "")(descr ""))
+)

@@ -1,39 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:switches
-LIBS:relays
-LIBS:motors
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:arduino
+EESchema Schematic File Version 4
 LIBS:ATTinyProgrammingShield-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -48,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L ATTINY85-20PU U1
+L ATTinyProgrammingShield-rescue:ATTINY85-20PU U1
 U 1 1 5B53AFAF
 P 5350 1650
 F 0 "U1" H 4200 2050 50  0000 C CNN
@@ -59,7 +26,7 @@ F 3 "" H 5350 1650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Conn_02x04_Counter_Clockwise J1
+L ATTinyProgrammingShield-rescue:Conn_02x04_Counter_Clockwise J1
 U 1 1 5B53B056
 P 4650 3450
 F 0 "J1" H 4700 3650 50  0000 C CNN
@@ -70,18 +37,7 @@ F 3 "" H 4650 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Arduino_Uno_Shield XA1
-U 1 1 5B53B132
-P 8700 4850
-F 0 "XA1" V 8800 4850 60  0000 C CNN
-F 1 "Arduino_Uno_Shield" V 8600 4850 60  0000 C CNN
-F 2 "Arduino:Arduino_Uno_Shield" H 10500 8600 60  0001 C CNN
-F 3 "" H 10500 8600 60  0001 C CNN
-	1    8700 4850
-	1    0    0    -1  
-$EndComp
-$Comp
-L CP C1
+L ATTinyProgrammingShield-rescue:CP C1
 U 1 1 5B53B177
 P 7200 2400
 F 0 "C1" H 7225 2500 50  0000 L CNN
@@ -162,7 +118,7 @@ b[1..8]
 Text Label 3800 2200 2    60   ~ 0
 a[1..8]
 $Comp
-L +5V #PWR01
+L power:+5V #PWR01
 U 1 1 5B53C069
 P 8600 1350
 F 0 "#PWR01" H 8600 1200 50  0001 C CNN
@@ -173,7 +129,7 @@ F 3 "" H 8600 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Earth #PWR02
+L power:Earth #PWR02
 U 1 1 5B53C0B1
 P 8900 1450
 F 0 "#PWR02" H 8900 1200 50  0001 C CNN
@@ -184,7 +140,7 @@ F 3 "" H 8900 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG03
+L power:PWR_FLAG #FLG03
 U 1 1 5B53C0CD
 P 8900 1350
 F 0 "#FLG03" H 8900 1425 50  0001 C CNN
@@ -195,7 +151,7 @@ F 3 "" H 8900 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG04
+L power:PWR_FLAG #FLG04
 U 1 1 5B53C119
 P 8600 1450
 F 0 "#FLG04" H 8600 1525 50  0001 C CNN
@@ -205,77 +161,35 @@ F 3 "" H 8600 1450 50  0001 C CNN
 	1    8600 1450
 	-1   0    0    1   
 $EndComp
-NoConn ~ 7400 5900
-NoConn ~ 7400 5700
-NoConn ~ 7400 4500
-NoConn ~ 7400 4600
-NoConn ~ 7400 4700
-NoConn ~ 7400 4800
-NoConn ~ 7400 4900
-NoConn ~ 7400 5000
-NoConn ~ 7400 5100
-NoConn ~ 7400 4100
-NoConn ~ 7400 4200
-NoConn ~ 7400 3800
-NoConn ~ 7400 3900
-NoConn ~ 10000 3800
-NoConn ~ 10000 3900
-NoConn ~ 10000 4000
-NoConn ~ 10000 4100
-NoConn ~ 10000 4200
-NoConn ~ 10000 4300
-NoConn ~ 10000 4400
-NoConn ~ 10000 4500
-NoConn ~ 10000 5100
-NoConn ~ 10000 5200
-NoConn ~ 10000 5300
-NoConn ~ 10000 5400
-NoConn ~ 10000 5500
-NoConn ~ 10000 5600
-NoConn ~ 10000 5900
 $Comp
-L Conn_01x10_Male J3
+L ATTinyProgrammingShield-rescue:Conn_01x10_Male J3
 U 1 1 5B53C6D5
-P 9800 2750
-F 0 "J3" H 9800 3250 50  0000 C CNN
-F 1 "Conn_01x10_Male" H 9800 2150 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x10_Pitch2.54mm" H 9800 2750 50  0001 C CNN
-F 3 "" H 9800 2750 50  0001 C CNN
-	1    9800 2750
+P 8350 2750
+F 0 "J3" H 8350 3250 50  0000 C CNN
+F 1 "Conn_01x10_Male" H 8350 2150 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x10_Pitch2.54mm" H 8350 2750 50  0001 C CNN
+F 3 "" H 8350 2750 50  0001 C CNN
+	1    8350 2750
 	1    0    0    -1  
 $EndComp
-NoConn ~ 10000 2350
-NoConn ~ 10000 2450
-NoConn ~ 10000 2950
-NoConn ~ 10000 3050
-NoConn ~ 10000 3150
-NoConn ~ 10000 3250
+NoConn ~ 8550 2350
+NoConn ~ 8550 2450
+NoConn ~ 8550 2950
+NoConn ~ 8550 3050
+NoConn ~ 8550 3150
+NoConn ~ 8550 3250
 Entry Wire Line
-	10200 2550 10300 2650
+	8750 2550 8850 2650
 Entry Wire Line
-	10200 2650 10300 2750
+	8750 2650 8850 2750
 Entry Wire Line
-	10200 2750 10300 2850
+	8750 2750 8850 2850
 Entry Wire Line
-	10200 2850 10300 2950
-Entry Wire Line
-	10200 4600 10300 4500
-Entry Wire Line
-	10200 4700 10300 4600
-Entry Wire Line
-	10200 4800 10300 4700
-Entry Wire Line
-	10200 4900 10300 4800
-Wire Bus Line
-	6900 1500 6900 2200
+	8750 2850 8850 2950
 Wire Bus Line
 	6900 2200 3800 2200
 Wire Bus Line
-	3800 1500 3800 3550
-Wire Bus Line
 	3800 2950 5600 2950
-Wire Bus Line
-	5600 2950 5600 3550
 Wire Wire Line
 	3900 1400 4000 1400
 Wire Wire Line
@@ -293,59 +207,29 @@ Wire Wire Line
 Wire Wire Line
 	6700 1900 6800 1900
 Wire Wire Line
-	4950 3350 5500 3350
+	4950 3350 5150 3350
 Wire Wire Line
-	4950 3450 5500 3450
+	4950 3450 5150 3450
 Wire Wire Line
-	4950 3550 5500 3550
+	4950 3550 5250 3550
 Wire Wire Line
-	4950 3650 5500 3650
+	4950 3650 5350 3650
 Wire Wire Line
 	8600 1450 8600 1350
 Wire Wire Line
 	8900 1350 8900 1450
-Wire Wire Line
-	10000 2550 10200 2550
-Wire Wire Line
-	10000 2650 10200 2650
-Wire Wire Line
-	10000 2750 10200 2750
-Wire Wire Line
-	10000 2850 10200 2850
-Wire Wire Line
-	10000 4600 10200 4600
-Wire Wire Line
-	10000 4700 10200 4700
-Wire Wire Line
-	10000 4800 10200 4800
-Wire Wire Line
-	10000 4900 10200 4900
-Text Label 10000 4600 0    60   ~ 0
+Text Label 8550 2550 0    60   ~ 0
 d10
-Text Label 10000 4700 0    60   ~ 0
+Text Label 8550 2650 0    60   ~ 0
 d11
-Text Label 10000 4800 0    60   ~ 0
+Text Label 8550 2750 0    60   ~ 0
 d12
-Text Label 10000 4900 0    60   ~ 0
+Text Label 8550 2850 0    60   ~ 0
 d13
-Text Label 10000 2550 0    60   ~ 0
-d10
-Text Label 10000 2650 0    60   ~ 0
-d11
-Text Label 10000 2750 0    60   ~ 0
-d12
-Text Label 10000 2850 0    60   ~ 0
-d13
-Wire Bus Line
-	10300 2650 10300 4800
-Text Label 10300 4400 0    60   ~ 0
+Text Label 8850 3050 0    60   ~ 0
 d[10..13]
-Text Label 10300 3050 0    60   ~ 0
-d[10..13]
-NoConn ~ 7400 5400
-NoConn ~ 7400 5600
 $Comp
-L Conn_01x08_Male J2
+L ATTinyProgrammingShield-rescue:Conn_01x08_Male J2
 U 1 1 5B53D192
 P 7600 2950
 F 0 "J2" H 7600 3350 50  0000 C CNN
@@ -360,44 +244,36 @@ NoConn ~ 7400 2650
 NoConn ~ 7400 2850
 NoConn ~ 7400 3150
 NoConn ~ 7400 3250
-Wire Wire Line
-	7400 5800 7300 5800
-Wire Wire Line
-	7300 5800 7300 5900
 $Comp
-L +5V #PWR05
+L power:+5V #PWR05
 U 1 1 5B53E200
-P 7300 5900
-F 0 "#PWR05" H 7300 5750 50  0001 C CNN
-F 1 "+5V" H 7300 6040 50  0000 C CNN
-F 2 "" H 7300 5900 50  0001 C CNN
-F 3 "" H 7300 5900 50  0001 C CNN
-	1    7300 5900
-	-1   0    0    1   
+P 9850 3250
+F 0 "#PWR05" H 9850 3100 50  0001 C CNN
+F 1 "+5V" H 9850 3390 50  0000 C CNN
+F 2 "" H 9850 3250 50  0001 C CNN
+F 3 "" H 9850 3250 50  0001 C CNN
+	1    9850 3250
+	1    0    0    -1  
 $EndComp
 $Comp
-L Earth #PWR06
+L power:Earth #PWR06
 U 1 1 5B53E220
-P 7300 5400
-F 0 "#PWR06" H 7300 5150 50  0001 C CNN
-F 1 "Earth" H 7300 5250 50  0001 C CNN
-F 2 "" H 7300 5400 50  0001 C CNN
-F 3 "" H 7300 5400 50  0001 C CNN
-	1    7300 5400
-	-1   0    0    1   
+P 9650 5450
+F 0 "#PWR06" H 9650 5200 50  0001 C CNN
+F 1 "Earth" H 9650 5300 50  0001 C CNN
+F 2 "" H 9650 5450 50  0001 C CNN
+F 3 "" H 9650 5450 50  0001 C CNN
+	1    9650 5450
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7300 5400 7300 5500
-Wire Wire Line
-	7300 5500 7400 5500
-Wire Wire Line
-	10000 5800 10300 5800
+	10150 3650 10450 3650
 Wire Wire Line
 	7400 3050 7200 3050
 Wire Wire Line
 	7200 3050 7200 3150
 $Comp
-L Earth #PWR07
+L power:Earth #PWR07
 U 1 1 5B53E6DE
 P 7200 3150
 F 0 "#PWR07" H 7200 2900 50  0001 C CNN
@@ -410,7 +286,7 @@ $EndComp
 Wire Wire Line
 	7400 2950 7200 2950
 $Comp
-L +5V #PWR08
+L power:+5V #PWR08
 U 1 1 5B53E732
 P 7200 2950
 F 0 "#PWR08" H 7200 2800 50  0001 C CNN
@@ -421,24 +297,24 @@ F 3 "" H 7200 2950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	6900 2750 7400 2750
+	6900 2750 7200 2750
 Text Label 6900 2750 0    60   ~ 0
 RESET
-Text Label 10300 5800 2    60   ~ 0
+Text Label 10450 3650 2    60   ~ 0
 RESET
 Wire Wire Line
-	4450 3350 3900 3350
+	4450 3350 4250 3350
 Wire Wire Line
 	4450 3450 3900 3450
 Wire Wire Line
 	4450 3550 3900 3550
 Wire Wire Line
-	3900 3650 4450 3650
+	3900 3650 4250 3650
 Wire Wire Line
 	7200 2550 7200 2750
 Connection ~ 7200 2750
 $Comp
-L Earth #PWR09
+L power:Earth #PWR09
 U 1 1 5B5434C4
 P 7400 2250
 F 0 "#PWR09" H 7400 2000 50  0001 C CNN
@@ -458,7 +334,7 @@ Wire Wire Line
 	5150 3350 5150 3250
 Connection ~ 5150 3350
 $Comp
-L +5V #PWR010
+L power:+5V #PWR010
 U 1 1 5B5436C9
 P 5150 3250
 F 0 "#PWR010" H 5150 3100 50  0001 C CNN
@@ -472,7 +348,7 @@ Wire Wire Line
 	4250 3650 4250 3750
 Connection ~ 4250 3650
 $Comp
-L Earth #PWR011
+L power:Earth #PWR011
 U 1 1 5B543723
 P 4250 3750
 F 0 "#PWR011" H 4250 3500 50  0001 C CNN
@@ -503,53 +379,149 @@ Connection ~ 4250 3350
 Text Label 4250 3150 3    60   ~ 0
 d10
 $Comp
-L +5V #PWR012
+L power:+5V #PWR012
 U 1 1 5B54437F
-P 5750 4500
-F 0 "#PWR012" H 5750 4350 50  0001 C CNN
-F 1 "+5V" H 5750 4640 50  0000 C CNN
-F 2 "" H 5750 4500 50  0001 C CNN
-F 3 "" H 5750 4500 50  0001 C CNN
-	1    5750 4500
+P 6500 4000
+F 0 "#PWR012" H 6500 3850 50  0001 C CNN
+F 1 "+5V" H 6500 4140 50  0000 C CNN
+F 2 "" H 6500 4000 50  0001 C CNN
+F 3 "" H 6500 4000 50  0001 C CNN
+	1    6500 4000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5750 4500 5750 4600
+	6500 4000 6500 4100
 $Comp
-L LED D1
+L ATTinyProgrammingShield-rescue:LED D1
 U 1 1 5B5443E2
-P 5750 4750
-F 0 "D1" H 5750 4850 50  0000 C CNN
-F 1 "LED" H 5750 4650 50  0000 C CNN
-F 2 "LEDs:LED_D5.0mm" H 5750 4750 50  0001 C CNN
-F 3 "" H 5750 4750 50  0001 C CNN
-	1    5750 4750
+P 6500 4250
+F 0 "D1" H 6500 4350 50  0000 C CNN
+F 1 "LED" H 6500 4150 50  0000 C CNN
+F 2 "LEDs:LED_D5.0mm" H 6500 4250 50  0001 C CNN
+F 3 "" H 6500 4250 50  0001 C CNN
+	1    6500 4250
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	5750 4900 5750 5000
+	6500 4400 6500 4500
 $Comp
-L R R1
+L ATTinyProgrammingShield-rescue:R R1
 U 1 1 5B54445A
-P 5750 5150
-F 0 "R1" V 5830 5150 50  0000 C CNN
-F 1 "220" V 5750 5150 50  0000 C CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5680 5150 50  0001 C CNN
-F 3 "" H 5750 5150 50  0001 C CNN
-	1    5750 5150
+P 6500 4650
+F 0 "R1" V 6580 4650 50  0000 C CNN
+F 1 "220" V 6500 4650 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6430 4650 50  0001 C CNN
+F 3 "" H 6500 4650 50  0001 C CNN
+	1    6500 4650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5750 5300 5750 5400
+	6500 4800 6500 4900
 $Comp
-L Earth #PWR013
+L power:Earth #PWR013
 U 1 1 5B5444ED
-P 5750 5400
-F 0 "#PWR013" H 5750 5150 50  0001 C CNN
-F 1 "Earth" H 5750 5250 50  0001 C CNN
-F 2 "" H 5750 5400 50  0001 C CNN
-F 3 "" H 5750 5400 50  0001 C CNN
-	1    5750 5400
+P 6500 4900
+F 0 "#PWR013" H 6500 4650 50  0001 C CNN
+F 1 "Earth" H 6500 4750 50  0001 C CNN
+F 2 "" H 6500 4900 50  0001 C CNN
+F 3 "" H 6500 4900 50  0001 C CNN
+	1    6500 4900
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	7200 2750 7400 2750
+Wire Wire Line
+	5150 3350 5500 3350
+Wire Wire Line
+	4250 3650 4450 3650
+Wire Wire Line
+	5150 3450 5500 3450
+Wire Wire Line
+	5250 3550 5500 3550
+Wire Wire Line
+	5350 3650 5500 3650
+Wire Wire Line
+	4250 3350 3900 3350
+$Comp
+L MCU_Module:Arduino_UNO_R3 A1
+U 1 1 5B6036CB
+P 9650 4250
+F 0 "A1" H 9350 5250 50  0000 C CNN
+F 1 "Arduino_UNO_R3" V 9650 4250 50  0000 C CNN
+F 2 "Modules:Arduino_UNO_R3" H 9800 3200 50  0001 L CNN
+F 3 "https://www.arduino.cc/en/Main/arduinoBoardUno" H 9450 5300 50  0001 C CNN
+	1    9650 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 2550 8750 2550
+Wire Wire Line
+	8550 2650 8750 2650
+Wire Wire Line
+	8550 2750 8750 2750
+Wire Wire Line
+	8550 2850 8750 2850
+Wire Wire Line
+	9150 4650 8950 4650
+Wire Wire Line
+	9150 4750 8950 4750
+Wire Wire Line
+	9150 4850 8950 4850
+Wire Wire Line
+	9150 4950 8950 4950
+Entry Wire Line
+	8850 4550 8950 4650
+Entry Wire Line
+	8850 4650 8950 4750
+Entry Wire Line
+	8850 4750 8950 4850
+Entry Wire Line
+	8850 4850 8950 4950
+Text Label 8850 4500 2    60   ~ 0
+d[10..13]
+Wire Wire Line
+	9550 5350 9650 5350
+Connection ~ 9650 5350
+Wire Wire Line
+	9650 5350 9750 5350
+Wire Wire Line
+	9650 5350 9650 5450
+NoConn ~ 9150 3650
+NoConn ~ 9150 3750
+NoConn ~ 9150 3850
+NoConn ~ 9150 3950
+NoConn ~ 9150 4050
+NoConn ~ 9150 4150
+NoConn ~ 9150 4250
+NoConn ~ 9150 4350
+NoConn ~ 9150 4450
+NoConn ~ 9150 4550
+NoConn ~ 10150 4250
+NoConn ~ 10150 4350
+NoConn ~ 10150 4450
+NoConn ~ 10150 4550
+NoConn ~ 10150 4650
+NoConn ~ 10150 4750
+NoConn ~ 10150 3850
+NoConn ~ 10150 4050
+NoConn ~ 9750 3250
+NoConn ~ 9550 3250
+NoConn ~ 10150 4950
+NoConn ~ 10150 5050
+Wire Bus Line
+	6900 1500 6900 2200
+Wire Bus Line
+	5600 2950 5600 3550
+Wire Bus Line
+	8850 2650 8850 4850
+Wire Bus Line
+	3800 1500 3800 3550
+Text Label 9150 4650 2    50   ~ 0
+d10
+Text Label 9150 4750 2    50   ~ 0
+d11
+Text Label 9150 4850 2    50   ~ 0
+d12
+Text Label 9150 4950 2    50   ~ 0
+d13
 $EndSCHEMATC
