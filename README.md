@@ -59,8 +59,6 @@ and what does not.
 
 # Acknowledgments
 
-* [Arduino KiCad library](https://github.com/Alarm-Siren/arduino-kicad-library)
-by Alarm-Siren - Arduino boards schematic symbols and footprints for KiCad
 * [ATTinyCore](https://github.com/SpenceKonde/ATTinyCore)
 by Spence Konde - suggested Arduino IDE board definitions for ATTiny chips
 * [GreatScott's YouTube video on the topic](https://www.youtube.com/watch?v=9LjfkjwMqXI&t=186s) - 
